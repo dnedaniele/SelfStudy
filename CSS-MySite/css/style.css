@@ -8,16 +8,24 @@ body {
 /**********CLASS SELCTOR*************/
 .upperDiv {
   background-color: #ffa259;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  padding: 20px;
 }
 
 .middleDiv {
   background-color: red;
   height: 200px;
   width: 200px;
+  border: 20px solid black;
+  margin-left: 260px;
 }
 
 .bottomDiv {
   background-color: blue;
   height: 200px;
   width: 200px;
+  border: 10px solid black;
+  margin-left: 500px;
 }
