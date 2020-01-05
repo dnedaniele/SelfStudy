@@ -1,9 +1,23 @@
-div {
-  background-color: #ffa259;
-}
+/**********TAG SELCTOR*************/
 h1 {
   margin: auto;
 }
 body {
   margin: auto;
+}
+/**********CLASS SELCTOR*************/
+.upperDiv {
+  background-color: #ffa259;
+}
+
+.middleDiv {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+.bottomDiv {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
 }
