@@ -4,12 +4,15 @@ body {
   margin: 0;
   text-align: center;
 }
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-family: "Girassol", cursive;
 }
 
-p {
+p,
+a {
   font-family: "Girassol", cursive;
 }
 /**********CLASS SELCTOR*************/
@@ -18,15 +21,9 @@ p {
 }
 
 .middleDiv {
-  background-color: red;
-  height: 200px;
-  width: 200px;
 }
 
 .bottomDiv {
-  background-color: blue;
-  height: 200px;
-  width: 200px;
 }
 .pro {
   text-decoration: underline;
