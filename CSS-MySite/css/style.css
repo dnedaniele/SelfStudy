@@ -6,6 +6,11 @@ body {
 }
 h1 {
   margin: 0;
+  font-family: "Girassol", cursive;
+}
+
+p {
+  font-family: "Girassol", cursive;
 }
 /**********CLASS SELCTOR*************/
 .upperDiv {
@@ -32,4 +37,7 @@ h1 {
 }
 
 .top-cloud {
+  position: relative;
+  left: 200px;
+  margin-top: 50px;
 }
