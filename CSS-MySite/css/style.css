@@ -47,3 +47,7 @@ a {
   height: 120px;
   width: 120px;
 }
+/**********ID SELCTOR*************/
+#credits {
+  font-size: x-small;
+}
