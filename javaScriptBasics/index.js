@@ -1,6 +1,6 @@
 // Twitter Text Character Counter
 
-var textInput = prompt();
+var textInput = prompt("Please, compose your tweet");
 
 console.log(textInput.length);
 
