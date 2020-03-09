@@ -16,4 +16,16 @@ alert(
     " left"
 );
 
-///
+/// VERSION WITH SLICE
+
+var tweet = prompt("Please, write your tweet here!");
+
+var tweetMaxlenght = 280 - tweet.length;
+
+alert("you have only " + tweetMaxlenght + "  charachters left");
+
+var tweetSliced = tweet.slice(0, 280);
+
+console.log(tweetSliced.length);
+
+alert("THIS IS YOUR TWEET:     " + tweetSliced);
