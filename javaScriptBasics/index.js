@@ -29,3 +29,14 @@ var tweetSliced = tweet.slice(0, 280);
 console.log(tweetSliced.length);
 
 alert("THIS IS YOUR TWEET:     " + tweetSliced);
+
+// Upper Case - Lower Case + Slice 
+
+var name = prompt("what is your name?");
+
+var standardChar = name.slice(0,1).toUpperCase() + name.slice(1,20).toLowerCase();
+
+
+console.log(standardName);
+
+alert("your name is " + standardChar)
