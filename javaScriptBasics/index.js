@@ -66,3 +66,17 @@ function getMilk(dollars) {
   
   getMilk(7);
 
+  // LifeLeft to live if you die with 90 years old
+
+  function lifeLeft() {
+       
+    var age = prompt("how old are you?");
+  
+    //console.log("you have left " + (90 - age)*365 + " days, "  + (90 - age)*52 + " weeks, and " + (90 - age)*12 + " months");    
+     
+    alert("you have left " + (90 - age)*365 + " days, "  + 
+    (90 - age)*52 + " weeks, and " + (90 - age)*12 + " months");        
+    
+  }
+
+    lifeLeft();
