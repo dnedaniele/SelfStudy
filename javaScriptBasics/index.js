@@ -49,3 +49,20 @@ var humanAge = ((dogAge - 2) * 4) + 21;
 
 alert("if your dog wäre eine Person, er würde " + humanAge + " alt sein");
 
+// Functions  ROBOT SHOPPING //
+
+function getMilk(dollars) { 
+  var bottles =  Math.floor(dollars / 1.5); 
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("buy " + bottles + " bottles of milk" );
+    console.log("moveRight");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("enterHouse");
+  }
+  
+  getMilk(7);
+
