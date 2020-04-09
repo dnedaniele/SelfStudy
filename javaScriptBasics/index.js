@@ -68,7 +68,7 @@ function getMilk(dollars) {
 
   // LifeLeft to live if you die with 90 years old
 
-  function lifeLeft() {
+  function lifeLeft(age) {
        
     var age = prompt("how old are you?");
   
@@ -79,4 +79,8 @@ function getMilk(dollars) {
     
   }
 
-    lifeLeft();
+    lifeLeft(age);
+
+    // *** Fuction with Arguments + Return *** //
+
+    
