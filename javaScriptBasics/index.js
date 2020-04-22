@@ -153,4 +153,32 @@ function getMilk(dollars) {
 
 alert("I bring u back " + getMilk(1.5) + " dollars")
 
-//
+// TOTAL FUNCTIONS
+
+function getMilk(dollars, costPerBottle) { 
+
+  //var dollars = prompt("I give you this amount of money")
+  //var bottles =  Math.floor(dollars / costPerBottle); 
+   console.log("leaveHouse");
+   console.log("moveRight");
+   console.log("moveUp");
+   console.log("buy " + calcBottles(dollars, costPerBottle) + " bottles of milk" );
+   console.log("moveRight");
+   console.log("moveLeft");
+   console.log("moveDown");
+   console.log("moveLeft");
+   console.log("enterHouse");
+   alert("Dear Master, I bought " + calcBottles(dollars, costPerBottle) + " bottles of milk" );
+   return calcChange(dollars, costPerBottle);
+ }
+ function calcBottles(startingMoney, costPerBottle){
+   var numbOfBottles =  Math.floor(startingMoney / costPerBottle);
+   return numbOfBottles;
+ }
+
+ function calcChange(startingAmount, costPerBottle){
+   var change = startingAmount % costPerBottle;
+   return change;
+ }
+
+alert("I bring u back " + getMilk(4, 1) + " dollars")  // your input it is coming only here! :)
