@@ -83,4 +83,22 @@ function getMilk(dollars) {
 
     // *** Fuction with Arguments + Return *** //
 
-    
+    function getMilk(dollars) { 
+
+      var dollars = prompt("I give you this amount of money")
+      var bottles =  Math.floor(dollars / 1.5); 
+       console.log("leaveHouse");
+       console.log("moveRight");
+       console.log("moveUp");
+       console.log("buy " + bottles + " bottles of milk" );
+       console.log("moveRight");
+       console.log("moveLeft");
+       console.log("moveDown");
+       console.log("moveLeft");
+       console.log("enterHouse");
+       alert("Dear Master, ich bin ein Hamsterkäufer: I bought " + bottles + " bottles of milk" );
+       return dollars % 1.5; // rest after buying the milk
+     }
+     
+     getMilk();
+   
