@@ -182,3 +182,28 @@ function getMilk(dollars, costPerBottle) {
  }
 
 alert("I bring u back " + getMilk(4, 1) + " dollars")  // your input it is coming only here! :)
+
+// Viking rade example
+
+// Organise your rade
+//1 ship carries 40 men - each man needs 1 axe 
+ //
+
+ function calcEquipment(numMen) {
+  console.log(numMen + " men are joining your raid");
+  console.log("you need " + calcShips(numMen) + " ships");
+  console.log("and " + calcWeapons(numMen) + " axes");
+}
+
+function calcShips(numMen){
+  var ships = Math.floor(numMen / 40);
+  return ships;
+}
+
+function calcWeapons(numMen){
+  var axes = Math.floor(numMen * 3);
+  return axes;
+}
+
+
+calcEquipment(100);
