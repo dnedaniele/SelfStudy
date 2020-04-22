@@ -124,3 +124,33 @@ function getMilk(dollars) {
     var change = getMilk();
    alert("I have " + change + "of change");
    
+   // EXAMPLE WITH FUNCTION WITHIN A FUNCTION
+
+   
+   //var dollars = prompt("I give you this amount of money")
+   //var bottles =  Math.floor(dollars / 1.5); 
+   console.log("leaveHouse");
+   console.log("moveRight");
+   console.log("moveUp");
+   console.log("buy " + calcBottles(dollars, 1.5) + " bottles of milk" );
+   console.log("moveRight");
+   console.log("moveLeft");
+   console.log("moveDown");
+   console.log("moveLeft");
+   console.log("enterHouse");
+   alert("Dear Master, I bought " + calcBottles(dollars, 1.5) + " bottles of milk" );
+   return calcChange(dollars, 1.5);
+ }
+ function calcBottles(startingMoney, costPerBottle){
+   var numbOfBottles =  Math.floor(startingMoney / costPerBottle);
+   return numbOfBottles;
+ }
+
+ function calcChange(startingAmount, costPerBottle){
+   var change = startingAmount % 1.5;
+   return change;
+ }
+
+alert("I bring u back " + getMilk(1.5) + " dollars")
+
+//
