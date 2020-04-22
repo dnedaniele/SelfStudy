@@ -217,7 +217,7 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 
 function bmiCalculator(yourWeight, yourHeight){
   var bmiNum = yourWeight/ (Math.pow(yourHeight, 2));
-  return bmiNum;
+  return Math.round(bmiNum);
 }
 
 
