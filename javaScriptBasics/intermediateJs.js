@@ -31,3 +31,21 @@ if (loveCalc() > 60) {
     alert("you have to fight for " + otherName + "s love")
 }
 
+// ADVANCED BMI
+
+function bmiCalculator (weight, height) {
+    var bmiNum = Math.floor(weight / Math.pow(height, 2));
+    console.log(bmiNum);
+    if (bmiNum < 18.5 ) {
+      var interpretation = " your BMI is " + bmiNum + " so you are underweight"
+    }
+    if(bmiNum > 18.5 && bmiNum < 24.9){ 
+       interpretation = "your BMI is " + bmiNum + " so you have a normal weight"
+    } 
+    if (bmiNum > 24.9) {
+      interpretation = "your BMI is " + bmiNum + " you are overweight"
+    }
+    return interpretation;
+}
+bmiCalculator(60, 2);
+
