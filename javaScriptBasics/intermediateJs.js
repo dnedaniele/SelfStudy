@@ -49,3 +49,26 @@ function bmiCalculator (weight, height) {
 }
 bmiCalculator(60, 2);
 
+// LEAP YEAR - IF UND ELSE
+
+function isLeap(year) {
+    
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return "it IS a leap year"
+            }
+            else {
+                return "it is NOT a leap year";
+            }
+    
+        } else {
+            return "it is NOT a leap year";
+        }
+    }
+        else {
+        return "it is NOT a leap year";
+    } 
+    }
+    
+    isLeap(2000);
