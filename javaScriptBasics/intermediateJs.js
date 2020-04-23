@@ -72,3 +72,18 @@ function isLeap(year) {
     }
     
     isLeap(2000);
+
+    //GUEST LIST - arrays + if else
+
+
+    var guestList = ["Kunigunde", "Erik", "Wolfgang", "Brunhild", "Daniele", "Joana"];
+
+    var newGuest = prompt("what is your name?");
+    console.log(typeof newGuest);
+    
+    if (guestList.includes(newGuest) === true ) {
+        alert("Welcome to the Party!");
+    } else {
+        alert("Unfortunately you are not invited!");
+    }
+    
