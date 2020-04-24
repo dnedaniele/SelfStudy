@@ -75,7 +75,6 @@ function isLeap(year) {
 
     //GUEST LIST - arrays + if else
 
-
     var guestList = ["Kunigunde", "Erik", "Wolfgang", "Brunhild", "Daniele", "Joana"];
 
     var newGuest = prompt("what is your name?");
@@ -87,3 +86,13 @@ function isLeap(year) {
         alert("Unfortunately you are not invited!");
     }
     
+// Increasing number count - piramid in Console
+
+var output = [];
+ var count = 1;
+
+function fizzBuzz() {
+    output.push(count + 1);
+    // oder  output.push(count++);
+    console.log(output);
+}
