@@ -116,6 +116,15 @@ function fizzBuzz() {
     console.log(output);
 
 }
+// WHO'S PAYING Function
 
-
+function whosPaying(names) {
+    var names = ["Angela", "Ben","Michael", "Cloe", "Jenny"];
+   var numberofPeople = names.length;
+    var personNum = (Math.random() * names.length);
+        personNum = Math.floor(personNum);
+    var randomPerson = names[personNum];
+       return randomPerson + " is going to buy the lunch today";
+   }
+   
 
