@@ -170,3 +170,32 @@ function beer() {
    console.log(rhyme);
     
 }
+
+//// WHILE LOOP : STATE - it repeats a function if a certain state is true or constant
+//// FOR LOOP : ITERATE - it repeats a function as many time as decided by you
+
+/// i.e. While Loop: you hit on a girl forever regardless success or failure: as long as the status "the girl is with you" === TRUE
+var x = "girl" === "girlfriend";
+boolean(x);
+
+function hitOnher(){
+  while( x === false ) {
+    console.log("hit on her");  //!warning! infinite loop 
+  }
+}
+
+hitOnher();
+
+/// i.e. For Loop: you hit on a girl 10 times and then you give up and get Tinder: for (var i = 0; i < 10; i++) {}
+
+const x = "girl";
+
+function hitOnher(){
+  for(var i=0; i <= 10; i++ ) {
+    console.log("hit on her");   
+  }
+  console.log("fuck it! I get Tinder!")
+}
+
+hitOnher();
+
