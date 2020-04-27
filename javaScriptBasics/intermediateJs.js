@@ -191,7 +191,7 @@ hitOnher();
 const x = "girl";
 
 function hitOnher(){
-  for(var i=0; i <= 10; i++ ) {
+  for(var i=0; i < 10; i++ ) {
     console.log("hit on her");   
   }
   console.log("fuck it! I get Tinder!")
@@ -199,3 +199,12 @@ function hitOnher(){
 
 hitOnher();
 
+// FOR LOOP - EXAMPLE Birthday Lifting Chair
+
+function liftTheChair() {
+    for(i = 1; i <= numbOfLifts; i++) {
+        console.log("call loud " + i );
+        console.log("Lift the chair");
+    }
+}
+liftTheChair();
