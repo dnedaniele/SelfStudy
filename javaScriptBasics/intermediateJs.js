@@ -201,6 +201,8 @@ hitOnher();
 
 // FOR LOOP - EXAMPLE Birthday Lifting Chair
 
+var numbOfLifts = prompt("how old are you becoming today?");
+
 function liftTheChair() {
     for(i = 1; i <= numbOfLifts; i++) {
         console.log("call loud " + i );
@@ -208,3 +210,4 @@ function liftTheChair() {
     }
 }
 liftTheChair();
+//
