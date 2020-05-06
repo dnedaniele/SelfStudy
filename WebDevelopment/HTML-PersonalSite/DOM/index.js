@@ -1,1 +1,1 @@
-alert("hello");
+document.query
