@@ -8,4 +8,4 @@ document.querySelector("button").textContent = "baciami";
 
 document.querySelector("ul").lastElementChild;
 
-document.querySelector("ul").lastElementChild.innerHTML = "<strong> Fuck >/strong>";
+document.querySelector("ul").lastElementChild.innerHTML = "<strong> Fuck </strong>";
