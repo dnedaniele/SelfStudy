@@ -1,5 +1,9 @@
 
+
+
+
 //// Function Player 1
+
 
 function diceThrow1Player() {  
   var randomNumber1 = Math.floor(Math.random() * 7);
@@ -22,12 +26,14 @@ if (randomNumber1 === 5) {
 if (randomNumber1 === 6) {
   document.querySelector(".dice .img1").setAttribute("src", "images/dice6.png");
 }
+console.log("first player " + randomNumber1);
+return randomNumber1
 }
 
 ////////// Function Player 2
 
 function diceThrow2Player() {  
-  var randomNumber2 = Math.floor(Math.random() * 7);
+  var randomNumber2 = Math.floor(Math.random() * 7); 
 
 if (randomNumber2 === 1 ) {
     document.querySelector(".dice .img2").setAttribute("src", "images/dice1.png");
@@ -47,6 +53,22 @@ if (randomNumber2 === 5) {
 if (randomNumber2 === 6) {
   document.querySelector(".dice .img2").setAttribute("src", "images/dice6.png");
 }
+console.log("second player " + randomNumber2);
+return randomNumber2
+}
+
+////
+function compareScore(randomNumber1, randomNumber2) {
+  
+  if(randomNumber1 > randomNumber2 ) {
+   console.log("tra 1 e 3");
+  }
+  else {
+    console.log("altro");
+  }
+
+  
+
 }
 
 ///////
@@ -54,4 +76,6 @@ if (randomNumber2 === 6) {
 function clickPlay() {
   diceThrow1Player();
   diceThrow2Player();
+  compareScore();
 }
+
