@@ -58,12 +58,12 @@ return randomNumber2
 }
 
 ////
-function compareScore(randomNumber1, randomNumber2) {
+function compareScore() {
   
-  if(randomNumber1 > randomNumber2) {
+  if(diceThrow1Player > diceThrow2Player) {
     document.querySelector("h1").innerHTML = "Player 1 wins";
   }
-  else if (randomNumber2 > randomNumber1) {
+  else if (diceThrow2Player > diceThrow1Player) {
     document.querySelector("h1").innerHTML = "Player 2 wins";
   }
   else {
