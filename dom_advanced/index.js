@@ -26,7 +26,7 @@ if (randomNumber1 === 5) {
 if (randomNumber1 === 6) {
   document.querySelector(".dice .img1").setAttribute("src", "images/dice6.png");
 }
-console.log("first player " + randomNumber1);
+//console.log("first player " + randomNumber1);
 return randomNumber1
 }
 
@@ -53,18 +53,18 @@ if (randomNumber2 === 5) {
 if (randomNumber2 === 6) {
   document.querySelector(".dice .img2").setAttribute("src", "images/dice6.png");
 }
-console.log("second player " + randomNumber2);
+//console.log("second player " + randomNumber2);
 return randomNumber2
 }
 
 ////
-function compareScore(randomNumber1, randomNumber2) {
+function compareScore() {
   
-  if(randomNumber1 > randomNumber2 ) {
-   console.log("tra 1 e 3");
+  if(diceThrow1Player() > diceThrow2Player() ) {
+   console.log("P 1 Wins");
   }
   else {
-    console.log("altro");
+    console.log("P 2 Wins");
   }
 
   
