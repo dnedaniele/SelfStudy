@@ -47,9 +47,14 @@ for (var i = 0; i < listLength ; i++) {
         this.workPermit = workPermit;
         this.age = age;
         this.languages = languages;
+        this.clean = function() {
+            alert("Cleaning in progress..");
+        }
     }
 
 var houseKeeperNonna = new HouseKeeper("Ada",false,23,["German", "Norvegian"]);  // a newly produced Object
+
+houseKeeperNonna.clean();  // to call the function "clean"
 
 // Factory
 function Car (brand, color, numOfDoors, engine) {
@@ -57,6 +62,9 @@ function Car (brand, color, numOfDoors, engine) {
     this.color = color;
     this.numOfDoors = numOfDoors;
     this.engine = engine;
+    this.drive = function() {
+        alert("the car drives");
+    }
 }
 
 // New Car
