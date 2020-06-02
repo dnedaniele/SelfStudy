@@ -15,6 +15,8 @@ for (var i = 0; i < listLength ; i++) {
 
             makeSound(buttonInnerHTML);
 
+            buttonAnimation(buttonInnerHTML);
+
         });
         
     }
@@ -23,7 +25,10 @@ for (var i = 0; i < listLength ; i++) {
 
     document.addEventListener("keydown",function (event) {
         makeSound(event.key)
+        buttonAnimation(event.key)
     });
+
+    // SET of FUNCTIONS
 
 function makeSound (key) {
 
@@ -62,3 +67,14 @@ function makeSound (key) {
     
 }
  
+function buttonAnimation(currentKey) {
+    
+   var activeButton = document.querySelector("." + currentKey)
+   
+   activeButton.classList.add("pressed");
+
+   setTimeout(function () {
+       activeButton.classList.remove("pressed");
+   },200);
+
+}
