@@ -40,3 +40,38 @@ $(document).keydown(function(event){   // Write on the DOM your Event.Key
 $("a").on("mouseover", function(){
     $("a").addClass("mouse-over");
 });
+
+// Add Elements in the DOM
+
+$("h1").before("<button>New</button>");  //before
+
+$("h1").after("<p>After Paragraph the H1</p>"); // after
+
+$("p").prepend("<button>prepend</button>  ");  // prepend
+$("p").append("  <button>append</button>");  // append
+
+// remove an Element form the DOM
+
+// $("a").remove();
+
+// Animation
+
+$("h2").on("click", function(){  //hide
+$("h1").hide();
+})
+
+//$("h2").on("mouseover", function(){  // Fade out
+//    $("h1").fadeOut();   // oder  $("h1").fadeIn();
+//})
+
+$("h3").hide();
+
+$("h4").on("click", function(){
+    $("h3").show();
+})
+
+// Concatenate Animations
+
+$("h4").on("click", function(){
+    $("h3").show().slideDown().animate({opacity: 0.5}).slideUp();
+});
