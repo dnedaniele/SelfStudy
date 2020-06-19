@@ -9,3 +9,12 @@ font-family: fantasy;
 .margin-50 {
     margin: 50px;
 }
+
+.search-text {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mouse-over {
+    font-size: larger;
+}
