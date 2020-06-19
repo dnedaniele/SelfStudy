@@ -1,6 +1,10 @@
 
 // HIGH ORDER FUNCTIONS calculator
 
+/// HIGHER ORDER FUNCTION = a Function that takes as an element another function
+ // Operator is a function that can take the role of the function above it
+                /// You are expecting a function instead of "operator"
+
 function add (num1, num2){
     return num1 + num2;
 }
