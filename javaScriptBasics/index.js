@@ -37,7 +37,7 @@ var name = prompt("what is your name?");
 
 var standardChar = name.slice(0,1).toUpperCase() + name.slice(1, name.length).toLowerCase();
 
-console.log(standardName);
+console.log(standardChar);
 
 alert("your name is " + standardChar)
 
