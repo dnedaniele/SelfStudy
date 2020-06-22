@@ -122,7 +122,7 @@ function getMilk(dollars) {
      }
      
     var change = getMilk();
-   alert("I have " + change + "of change");
+   alert("I have " + change + " of change");
    
    // EXAMPLE WITH FUNCTION WITHIN A FUNCTION
 
@@ -196,15 +196,14 @@ alert("I bring u back " + getMilk(4, 1) + " dollars")  // your input it is comin
 }
 
 function calcShips(numMen){
-  var ships = Math.floor(numMen / 40);
+  var ships = Math.ceil(numMen / 40);
   return ships;
 }
 
 function calcWeapons(numMen){
-  var axes = Math.floor(numMen * 3);
+  var axes = Math.ceil(numMen * 3);
   return axes;
 }
-
 
 calcEquipment(100);
 
@@ -224,3 +223,4 @@ function bmiCalculator(yourWeight, yourHeight){
 var bmi = bmiCalculator(60, 1.7); 
 console.log(bmi);
 
+alert("Your BMI Score is " + bmi);

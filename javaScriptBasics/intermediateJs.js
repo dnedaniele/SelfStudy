@@ -10,7 +10,7 @@ function loveCalc(){
     return loveScore;
 }
 
-var matchalert = alert("this is the likelihood from 0 to 100 that you and " + otherName + " can be together: " + loveCalc())
+var matchAlert = alert("this is the likelihood from 0 to 100 that you and " + otherName + " can be together: " + loveCalc())
 
 
 // Love Calculator WITH IF AND ELSE
