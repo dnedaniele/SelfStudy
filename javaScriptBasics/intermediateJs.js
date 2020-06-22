@@ -14,7 +14,7 @@ var matchAlert = alert("this is the likelihood from 0 to 100 that you and " + ot
 
 
 // Love Calculator WITH IF AND ELSE
-// 1.input ur name 2. input loved one's name 3. alert with numebr between 0-100
+// 1.input ur name 2. input loved one's name 3. alert with number between 0-100
 
 var yourName = prompt("what is your name?");
 var otherName = prompt("how is called the person you like?")
@@ -28,7 +28,7 @@ function loveCalc(){
 if (loveCalc() > 60) {
     alert(otherName + " is totally fond of you!")
 }else {
-    alert("you have to fight for " + otherName + "s love")
+    alert("you have to fight for " + otherName + " 's love")
 }
 
 // ADVANCED BMI
@@ -126,6 +126,8 @@ function whosPaying(names) {
     var randomPerson = names[personNum];
        return randomPerson + " is going to buy the lunch today";
    }
+
+   whosPaying();
    
 // FIZZBUZZ with a WHILE LOOP
 var output = [];
