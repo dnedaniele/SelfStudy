@@ -74,3 +74,33 @@ function Car (brand, color, numOfDoors, engine) {
 // New Car
 var golf = new Car ("Volkswagen","grey",5,"Benzin");
   
+
+
+// CHANGE BUTTONS ON emp.de BY mouseover THE MENU BAR
+
+var listMenubar = document.querySelectorAll("a.has-sub-menu").length;
+
+for( var i = 0; i < listMenubar; i++)  {
+   
+document.querySelectorAll("a.has-sub-menu")[i].addEventListener("mouseover", function(){
+ 
+var x = this;
+x.innerHTML = "cacca";
+  
+});
+    
+    
+}
+
+// il Giornale.it - menubar+ dropdown 
+
+
+var listHrefToChange= document.getElementsByClassName("block block-system block-menu")[0].querySelectorAll("a").length;
+var listNolength =document.getElementsByClassName("block block-system block-menu")[0].querySelectorAll("a")
+
+for (var i = 0; i <listHrefToChange; i++)  {
+ listNolength[i].addEventListener("mouseover",function(){
+   var x = this;
+   this.innerText = "cacca";
+ });
+}
