@@ -25,7 +25,7 @@ function calculator (num1, num2, operator){    // this is the high order functio
     return operator(num1, num2);
 }
 
-calculator(5,4, division);
+calculator(5,4, division);  // in this case, "division" is the Function that works as Operator
 
 
 
@@ -53,8 +53,8 @@ for (var i = 0; i < listLength ; i++) {
         this.languages = languages;
         this.clean = function() {
             alert("Cleaning in progress..");
-        }
-    }
+        }                                                   
+    }                                          // the Constructor Function is a function that construct Objects
 
 var houseKeeperNonna = new HouseKeeper("Ada",false,23,["German", "Norvegian"]);  // a newly produced Object
 
