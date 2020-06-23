@@ -104,3 +104,32 @@ for (var i = 0; i <listHrefToChange; i++)  {
    this.innerText = "cacca";
  });
 }
+
+// Super Geiles Beispiel für der Epitethos Macher https://stackoverflow.com/questions/43423458/use-string-includes-in-switch-javascript-case
+
+function classify(string){
+    var category = categorize(string);
+    switch (category) {
+      case 'product':
+        console.log('this is a product');
+        break;
+      case 'user':
+        console.log('this is a user');
+        break;
+      default:
+        console.log('category undefined');    
+    }
+  }
+  
+  function categorize(string){
+    if (string.includes('product')){
+      return 'product';
+    }
+    if (string.includes('user')){
+      return 'user';
+    }
+  }
+  
+  classify("product789");
+  classify("user123");
+  classify("test567");
