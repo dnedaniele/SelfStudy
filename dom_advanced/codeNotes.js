@@ -133,3 +133,37 @@ function classify(string){
   classify("product789");
   classify("user123");
   classify("test567");
+
+  // Application - mouseover - recognise text auf Giornale.it
+
+  var listHrefToChange= document.querySelectorAll("a").length;
+var listNolength = document.querySelectorAll("a");
+
+for (var i = 0; i <listHrefToChange; i++)  {
+ listNolength[i].addEventListener("mouseover",function(){
+var selectInnerHTML = this.innerHTML;
+
+var category = categorize(selectInnerHTML); // this variable contains the return from function categorize(selectInnerHTML)
+
+switch(category){
+    case "Conte":
+    console.log("si parla di Conte");
+    break;
+    case "M5s":
+    console.log("Si parla dei 5 Stelle")
+    break; 
+    default:
+        console.log('category undefined'); 
+}
+
+ });
+ function categorize(selectInnerHTML){    // this is the function 
+    
+  if (selectInnerHTML.includes('Conte')){
+    return 'Conte';
+  }
+  if (selectInnerHTML.includes('M5s')){
+    return 'M5s';
+  }
+}
+}
