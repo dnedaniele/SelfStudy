@@ -134,7 +134,7 @@ function classify(string){
   classify("user123");
   classify("test567");
 
-  // Application - mouseover - recognise text auf Giornale.it
+  // Application - mouseover - recognise text auf Giornale.it TEXT RECOGNITION "Conte"
 
   var listHrefToChange= document.querySelectorAll("a").length;
 var listNolength = document.querySelectorAll("a");
@@ -167,3 +167,21 @@ switch(category){
   }
 }
 }
+
+// Make all Paragraphs in Red 
+
+var allP = document.querySelectorAll("p").length;
+
+for (var i = 0; i < allP; i++)  {
+ document.querySelectorAll("p")[i].style.color = "red"};
+
+
+ // setTimeout
+
+ var name = prompt("what is your name?");
+
+console.log("I am processing your request...")
+
+setTimeout(function(){
+    console.log("your name is " + name)
+}, 6000)
