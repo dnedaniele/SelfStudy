@@ -4,7 +4,12 @@ const { response } = require("express");
 const app = express();
 
 app.get("/", function (req, res) {
-res.send("Hello homePage")
+res.sendFile(__dirname + "/index.html");
+//console.log(__dirname);
+})
+
+app.post("/", function (req, res) {
+    res.send("thanks for posting you calculation!")
 })
 
 app.get("/contact", function (req, res) {
