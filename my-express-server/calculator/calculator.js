@@ -12,6 +12,15 @@ app.post("/", function (req, res) {
     res.send("thanks for posting you calculation!")
 })
 
+
+
+
+
+
+
+
+
+
 app.get("/contact", function (req, res) {
     res.send("please contact me to this email: daniele@daniele.com")
 })
