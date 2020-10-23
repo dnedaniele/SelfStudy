@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Wizard Game</title>
+    <title>Wizard Game - My Test</title>
 
   </head>
   <body>
-
+<div style="margin:300px;"></div>
     <div id="wizard-list"></div>
 
-
+<br><br>
   <footer>
    Wizard Game
   </footer>
@@ -27,14 +27,14 @@
         this.type = type;
         this.display = function(){
             const container = document.createElement("div");
-            container.innerHTML = this.lastName + this.firstName; 
+            container.innerHTML = this.lastName + this.firstName ; 
 
             // add a button
             const button = document.createElement("button");
             button.innerHTML = "make magic";
 
             button.onclick = function () { 
-                this.makeMagic();
+                this.makeMagic;
             }
             // TODO: read https://javascript.info/object-methods
             
@@ -42,7 +42,6 @@
             document.getElementById("wizard-list").appendChild(container);
         }
         this.makeMagic = function (){
-            console.log(this.type,)
              if(this.type === "good" ){
                  alert("good magic!")
              }else{
@@ -52,10 +51,11 @@
     }
     
 
-    var HP = new Wizard("Potter","Harry","good");
-    var voldemort = new Wizard("Riddle", "Tom", "bad");
+    var HP = new Wizard("Potter ","Harry ","good");
+    var voldemort = new Wizard("Riddle ", "Tom ", "bad");
     HP.display();
     voldemort.display();
+    
     
 
 </script>
