@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+
+  </head>
+  <body>
+
+    <div id="wizard-list"></div>
+
+
+  <footer>
+   Wizard Game
+  </footer>
+
+<script>
+
+    // lastName
+    // firstName
+    // type
+    // new wizard Constructor
+
+    function Wizard(lastName, firstName,type) {
+        this.lastName = lastName; // assigment
+        this.firstName = firstName;
+        this.type = type;
+        this.display = function(){
+            const container = document.createElement("div");
+            container.innerHTML = this.lastName + this.firstName; 
+
+            // add a button
+            const button = document.createElement("button");
+            button.innerHTML = "make magic";
+
+            button.onclick = function () { this.makeMagic;}
+            // TODO: read https://javascript.info/object-methods
+
+            container.appendChild(button); 
+            document.getElementById("wizard-list").appendChild(container);
+        }
+        this.makeMagic = function (){
+            console.log(this.type, "type")
+             if(this.type === "good" ){
+                 alert("good magic!")
+             }else{
+                 alert("black magic")
+             }
+        }
+    }
+    
+
+    var HP = new Wizard("Potter","Harry","good");
+    var voldemort = new Wizard("Riddle", "Tom", "bad");
+    HP.display();
+    voldemort.display();
+
+</script>
+</html>
+
+
+

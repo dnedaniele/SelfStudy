@@ -77,6 +77,34 @@ function Car(brand, color, numOfDoors, engine) {
   };
 }
 
+function Person(name, age) {
+  //  constructor --> factory of object
+  this.name = name;
+  this.age = age;
+  this.yearBorn = new Date().getFullYear() - age;
+  this.sayHi = function () {
+    alarm(`Hi, I am ${this.name}!`); // `Hi, I am ${this.name}!` --> "Hi, I am " + this.name + "!"
+  };
+}
+
+function GoogleAnalytics(api) {
+  this.event = () => {};
+}
+
+const GA = new GoogleAnalytics(api);
+
+GA.event();
+
+const daniele = new Person("Daniele");
+daniele.age = 4;
+daniele.musicTaste = "";
+
+const bogdan = new Person("Bogdan");
+bogdan.age = 15;
+
+const dragos = new Person("Dragos");
+dragos.age = 19;
+
 // New Car
 var golf = new Car("Volkswagen", "grey", 5, "Benzin");
 
@@ -192,3 +220,19 @@ console.log("I am processing your request...");
 setTimeout(function () {
   console.log("your name is " + name);
 }, 6000);
+
+// NOTES: Function
+
+const product1Netto = 10;
+const product2Netto = 5;
+const product3Netto = 5;
+const product4Netto = 5;
+const product5Netto = 5;
+const product6Netto = 5;
+const product7Netto = 5;
+const product8Netto = 5;
+
+function sayGoodMorning() {
+  // reusable code
+  alert("Hi there, happy " + new Date());
+}
