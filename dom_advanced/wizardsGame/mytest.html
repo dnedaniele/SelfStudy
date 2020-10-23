@@ -10,8 +10,8 @@
     <div id="wizard-list"></div>
 
 <br><br>
-  <footer>
-   Wizard Game
+  <footer> 
+   Wizard Game - <a href="https://javascript.info/object-methods">https://javascript.info/object-methods</a> 
   </footer>
 
 <script>
@@ -34,7 +34,8 @@
             button.innerHTML = "make magic";
 
             button.onclick = function () { 
-                this.makeMagic;
+                console.log(this.firstName);    // this. is not referencing the Object Wizard anymore 
+                this.makeMagic;                 // but it is referencing "button.onclick" as if it were an Object
             }
             // TODO: read https://javascript.info/object-methods
             
