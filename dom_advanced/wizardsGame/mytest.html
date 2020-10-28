@@ -36,7 +36,7 @@
             button.onclick = function () { 
                 console.log(this.firstName);    // this. is not referencing the Object Wizard anymore 
                 this.makeMagic;                 // but it is referencing "button.onclick" as if it were an Object
-            }
+            };
             // TODO: read https://javascript.info/object-methods
             
             container.appendChild(button); 
